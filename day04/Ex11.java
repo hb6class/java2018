@@ -1,6 +1,8 @@
 class Ex11{
 
 public static void main(String[] args){
+	boolean end=true;
+	while(end){
 
 	System.out.println("-----------------------------");
 	System.out.println("학생성적프로그램 (ver 0.0.1)");
@@ -37,6 +39,13 @@ public static void main(String[] args){
 			grade+=65;
 	}
 	System.out.println("학점: "+(char)grade);
+
+	System.out.print("1.계속 0.종료");
+		if(sc.nextInt()==0){
+			end=!end;
+		}
+	}
+	System.out.println("이용해주셔서 감사합니다!!!");
 
 }
 
